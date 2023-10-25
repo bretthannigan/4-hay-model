@@ -1,13 +1,12 @@
-# twister
-![header image](img/Composite-Bg.png)
+# 4-hay-model
+<img src="img/Model.png" alt="Model image" width="400"/>
 
-## Geometric Model for Helical Auxetic Yarn
+## Geometric Model for 4-Component Helical Auxetic Yarn
 
-A Maple script that produces a geometrical model for 2-component helical auxetic yarns at arbitrary strain. The user may specify the following parameters:
+A Maple script that produces a geometrical model for 4-component helical auxetic yarns at arbitrary strain. The user may specify the following parameters:
 
 - Elastic core initial diameter
 - Winding diameter
-- Thickness of optional coating on winding (dielectric layer)
 - Initial pitch (helical length)
 - Elastic core Poisson's ratio
 - Final strain
@@ -15,21 +14,15 @@ A Maple script that produces a geometrical model for 2-component helical auxetic
 
 The geometry generator has the following assumptions:
 
-- At 0% strain, the yarns contain an extensible elastic core fibre with an inextensible winding.
-- The extensible fibre geometry is entirely defined by the extensible fibre (i.e. the inextensible fibre deforms as it would without the presence of the core).
-- The fibres are locally stiff, so that the contact path between both is a line.
+- The fibres are locally stiff, meaning that we neglect the force and any resulting indentation between them.
+- The inextensible fibres always occupy the grooves in the extensible fibre double helix and each have point contacts with both extensible fibres in the cross-section.
+- The inextensible fibres have circular cross-section, allowing the use of the parallel wires formula to estimate capacitance.
 
-The script generates 3D renderings of the fibre geometries, an animation of extension from 0% strain to the requested final strain, and cross-sectional bitmap images that can be used to estimate electrical properties.
+The script generates 3D renderings of the fibre geometries, cross-sectional bitmap images, and estimated capacitance versus strain.
 
 ## More Information
 
-Please see the included [presentation](pres/HAY_Modelling.pdf) and paper below (with associated SI) for further details. Please cite if this work is useful to you. This script was used in the following publication:
-> Cuthbert, T. J., Hannigan, B. C., Shokurov, A., & Menon, C. (2023). HACS: Helical Auxetic Yarn Capacitive Sensors that Go Beyond the Theoretical Sensitivity Limit. _Advanced Materials_, 35(10). https://doi.org/10.1002/adma.202209321
-
-## Example Animation
-
-Below is an example animation of a fibre with parameters (0.2, 2, 0.05, 4, 0.4, 1, 2)
-
-![animation](img/Animation.gif)
+Please see the included presentation (presented at the [E-Textiles 2023](https://e-textilesconference.com/) Conference) and paper below (with associated SI) for further details. Please cite if this work is useful to you. This script was used in the following conference proceedings:
+> Hannigan, B. C., Cuthbert, T. J., & Menon, C. (2023). HACS4x: 4-Ply Helical Auxetic Capacitive Sensors for Strain Sensing E-textiles. _Engineering Proceedings_. (Submitted)
 
 ©2023 ETH Zurich, Brett Hannigan; D-HEST; Biomedical and Mobile Health Technology (BMHT) Lab; Carlo Menon
